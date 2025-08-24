@@ -123,19 +123,34 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser carousel -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <!-- Your video here -->
-        <img src="static/images/PRED-MPPI.png" alt="MY ALT TEXT">
-      <h2 class="subtitle has-text-centered">
-      PRED-MPPI integrating disturbance preview into MPPI rolling dynamics with variable discretization grids.
-      </h2>
+
+      <!-- Carousel -->
+      <div id="teaser-carousel" class="carousel results-carousel">
+        <!-- 图片 1 -->
+        <div class="item">
+          <img src="static/images/PRED-MPPI.png" alt="PRED-MPPI">
+          <h2 class="subtitle has-text-centered">
+            PRED-MPPI integrating disturbance preview into MPPI rolling dynamics with variable discretization grids.
+          </h2>
+        </div>
+
+        <!-- 图片 2 -->
+        <div class="item">
+          <img src="static/images/compare_exp.png" alt="PRED-MPPI 2">
+          <h2 class="subtitle has-text-centered">
+            Comparison between baseline MPPI and the proposed PRED-MPPI under fan-induced wind disturbance.
+          </h2>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser carousel -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -272,7 +287,7 @@
     <div class="container">
 
       <!-- Common big title -->
-      <h1 class="title is-2 has-text-centered">Results</h1>
+      <h1 class="title is-2">Results</h1>
 
       <!-- Part 1 -->
       <h2 class="title is-4 has-text-centered">Simulations</h2>
@@ -329,7 +344,15 @@
   </div>
 </section>
 <!-- End Results section -->
-
+<style>
+.carousel img {
+  max-width: 70%; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 8px; 
+}
+</style>
 
 
 
