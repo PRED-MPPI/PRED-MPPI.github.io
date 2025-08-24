@@ -196,27 +196,27 @@
         </div>
         <div class="item">
           <video poster="" id="video2" autoplay controls muted loop width="100%">
-            <source src="static/videos/hoverDA-MPPI.mp4" type="video/mp4">
+            <source src="static/videos/hoverMPPI.mp4" type="video/mp4">
           </video>
-        <p class="has-text-centered">DA-MPPI</p> 
+        <p class="has-text-centered">MPPI</p> 
         </div>
         <div class="item">
           <video poster="" id="video3" autoplay controls muted loop width="100%">
-            <source src="static/videos/hoverMPPI.mp4" type="video/mp4">
-          </video>
-          <p class="has-text-centered">MPPI</p>
-        </div>
-        <div class="item">
-          <video poster="" id="video4" autoplay controls muted loop width="100%">
-            <source src="static/videos/hoverDA-MPPI_VDG.mp4" type="video/mp4">
-          </video>
-          <p class="has-text-centered">DA-MPPI+VDG</p>
-        </div>
-        <div class="item">
-          <video poster="" id="video5" autoplay controls muted loop width="100%">
             <source src="static/videos/hoverMPPI_VDG.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">MPPI+VDG</p>
+        </div>
+        <div class="item">
+          <video poster="" id="video4" autoplay controls muted loop width="100%">
+            <source src="static/videos/hoverDA-MPPI.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered">DA-MPPI</p>
+        </div>
+        <div class="item">
+          <video poster="" id="video5" autoplay controls muted loop width="100%">
+            <source src="static/videos/hoverDA-MPPI_VDG.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered">DA-MPPI+VDG</p>
         </div>
         <div class="item">
           <video poster="" id="video6" autoplay controls muted loop width="100%">
@@ -228,7 +228,17 @@
     </div>
   </div>
 </section>
-
+<style>
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; 
+}
+.video-grid video {
+  width: 100%;
+  border-radius: 8px;
+}
+</style>
 
 <!-- fan-induced wind experiments -->
 <section class="hero is-small">
@@ -276,8 +286,6 @@
     </div>
   </div>
 </section>
-
-
 <style>
 .video-grid {
   display: grid;
