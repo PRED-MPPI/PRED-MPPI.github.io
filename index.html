@@ -181,45 +181,44 @@
 </section>
 <!-- End image carousel -->
 
-
 <!-- Ground-effect-disturbed Hovering Experiments -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Ground-effect-disturbed Hovering Experiments</h2>
-      <div class="video-grid">
+      <div class="video-grid-3">
         <div class="item">
-          <video poster="" id="video1" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/hoverPD.mp4" type="video/mp4">
           </video>
-           <p class="has-text-centered">Geometry PD</p>
+          <p class="has-text-centered">Geometry PD</p>
         </div>
         <div class="item">
-          <video poster="" id="video2" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/hoverMPPI.mp4" type="video/mp4">
           </video>
-        <p class="has-text-centered">MPPI</p> 
+          <p class="has-text-centered">MPPI</p>
         </div>
         <div class="item">
-          <video poster="" id="video3" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/hoverMPPI_VDG.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">MPPI+VDG</p>
         </div>
         <div class="item">
-          <video poster="" id="video4" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/hoverDA-MPPI.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">DA-MPPI</p>
         </div>
         <div class="item">
-          <video poster="" id="video5" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/hoverDA-MPPI_VDG.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">DA-MPPI+VDG</p>
         </div>
         <div class="item">
-          <video poster="" id="video6" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/hoverPRED-MPPI.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">PRED-MPPI</p>
@@ -228,56 +227,45 @@
     </div>
   </div>
 </section>
-<style>
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem; 
-}
-.video-grid video {
-  width: 100%;
-  border-radius: 8px;
-}
-</style>
 
 <!-- fan-induced wind experiments -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Fan-induced Wind Experiments</h2>
-      <div class="video-grid">
+      <div class="video-grid-2">
         <div class="item">
-          <video poster="" id="video1" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/PD.mp4" type="video/mp4">
           </video>
-           <p class="has-text-centered">Geometry PD</p>
+          <p class="has-text-centered">Geometry PD</p>
         </div>
         <div class="item">
-          <video poster="" id="video2" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/DA-MPPI.mp4" type="video/mp4">
           </video>
-        <p class="has-text-centered">DA-MPPI</p> 
+          <p class="has-text-centered">DA-MPPI</p>
         </div>
         <div class="item">
-          <video poster="" id="video3" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/MPPI.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">MPPI</p>
         </div>
         <div class="item">
-          <video poster="" id="video4" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/DA-MPPI_VDG.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">DA-MPPI+VDG</p>
         </div>
         <div class="item">
-          <video poster="" id="video5" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/MPPI_VDG.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">MPPI+VDG</p>
         </div>
         <div class="item">
-          <video poster="" id="video6" autoplay controls muted loop width="100%">
+          <video autoplay controls muted loop width="100%">
             <source src="static/videos/PRED-MPPI.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered">PRED-MPPI</p>
@@ -286,13 +274,20 @@
     </div>
   </div>
 </section>
+
 <style>
-.video-grid {
+.video-grid-3 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 1rem; 
+  grid-template-columns: repeat(3, 1fr); /* 三列 */
+  gap: 1rem;
 }
-.video-grid video {
+.video-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 两列 */
+  gap: 1rem;
+}
+.video-grid-3 video,
+.video-grid-2 video {
   width: 100%;
   border-radius: 8px;
 }
